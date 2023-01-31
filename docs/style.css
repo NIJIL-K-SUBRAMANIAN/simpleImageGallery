@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0 ;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+div{
+    flex: 16.666%;
+    padding: 0 5px;
+}
+
+img{
+    width: 100%;
+    border-radius: 25px;
+     margin: 1px 0;
+     transform: scale(.9);
+     transition: 1s ease-in-out;
+}
+
+img:hover{
+transform: scale(1);
+}
+
+@media (max-width:1198px){
+    div{
+        flex: 33.33333%;
+    }
+}
+
+@media (max-width:749px){
+    div{
+        flex: 50%;
+    }
+}
+@media(max-width:500px){
+    div{
+        flex: 100%;
+    }
+}
